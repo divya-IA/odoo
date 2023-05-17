@@ -1,0 +1,13 @@
+<!--<odoo>-->
+<!--    <record id="reference_security" model="ir.module.category">-->
+<!--        <field name="name">Reference</field>-->
+<!--    </record>-->
+<!--    <record id="group_reference_user" model="res.groups">-->
+<!--        <field name="name">reference module user</field>-->
+<!--        <field name="category_id" ref="reference_security"/>-->
+<!--        <field name="implied_id" eval="[(4, ref('base.group_user'))]"/>-->
+<!--        <field name="model_id" ref="reference.reference"/>-->
+<!--    </record>-->
+<!--</odoo>-->
+
+

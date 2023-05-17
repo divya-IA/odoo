@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem id="real_estate_root" name="Real Estate"/>
+    <menuitem id="real_estate_property_menu" name="Advertisement" parent="real_estate_root" sequence="10"/>
+    <menuitem id="real_estate_setting_menu" name="Settings" parent="real_estate_root" sequence="20"/>
+</odoo>
