@@ -34,7 +34,7 @@
     Dear <span t-field="activity.user_id.name"/>,
     <br/><br/>
     <p>
-        <span t-field="activity.create_uid.name"/> has just assigned you the following activity:
+        <span t-field="activity.create_uid.name"/> has just assigned you the following activity..:
         <ul>
             <li>Document: "<t t-esc="activity.res_name"/>"
                 <t t-if="model_description"> (<t t-esc="model_description"/>)</t>
