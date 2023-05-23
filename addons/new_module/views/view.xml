@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <tree string="Record">
                 <field name="employee_name"/>
-                <field name="report_to"/>
+                <field name="report_to" widget="many2many_tags"/>
             </tree>
         </field>
     </record>
@@ -18,7 +18,7 @@
                 <sheet>
                     <group>
                         <field name="employee_name"/>
-                        <field name="report_to" />
+                        <field name="report_to" widget="many2many_tags"/>
                     </group>
                 </sheet>
             </form>
