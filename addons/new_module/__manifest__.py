@@ -32,7 +32,7 @@
     ],
     'installable': True,
     'category': 'Services',
-    # 'depends':['base'],
+    'depends':['base'],
     'application':True,
     'demo': []
 }

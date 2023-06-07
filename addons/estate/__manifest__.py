@@ -9,7 +9,7 @@
         'views/estate_menus.xml',
         'views/estate_property_views.xml'
     ],
-    # 'depends':['account'],
+    'depends':['base'],
     'category': 'Services',
     'application': True
 }
