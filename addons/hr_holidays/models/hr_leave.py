@@ -1348,8 +1348,10 @@ class HolidaysRequest(models.Model):
         return True
 
     def action_refuse(self):
-        if (self.user_id.name == self.employee_id.name) & (self.user_id.id != 10 & self.user_id.id != 2) :
-            raise UserError(_("user can not refuse their own request"))
+        # if (self.user_id.name == self.employee_id.name) & (self.user_id.id != 12 & self.user_id.id != 2) :
+        #     raise UserError(_("user can not refuse their own request"))
+        if not self.env.is_admin():
+            raise AccessError(_("user can not refuse their own time off request.."))
         current_employee = self.env.user.employee_id
         if any(holiday.state not in ['draft', 'confirm', 'validate', 'validate1'] for holiday in self):
             raise UserError(_('Time off request must be confirmed or validated in order to refuse it.'))
